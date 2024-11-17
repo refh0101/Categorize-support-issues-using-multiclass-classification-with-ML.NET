@@ -6,11 +6,11 @@ This repository demonstrates a machine learning solution built with ML.NET to cl
 
 - Model Training: Utilizes the SDCA Maximum Entropy trainer for efficient multiclass classification.
   
--Evaluation: Provides metrics such as accuracy, log-loss, and log-loss reduction to measure the model's performance.
+- Evaluation: Provides metrics such as accuracy, log-loss, and log-loss reduction to measure the model's performance.
 
--Prediction: Supports real-time prediction for individual data points using the trained model.
+- Prediction: Supports real-time prediction for individual data points using the trained model.
 
--Model Persistence: Saves and reloads the trained model for reuse in production environments.
+- Model Persistence: Saves and reloads the trained model for reuse in production environments.
 
 ## Technology Stack
 - ML.NET: Core machine learning framework for building and training models.
@@ -18,9 +18,7 @@ This repository demonstrates a machine learning solution built with ML.NET to cl
 - .NET Core: Provides cross-platform compatibility for the application.
 
 ## How It Works
-- Data Preparation:
-
-Input data is read from TSV files containing GitHub issues.
+- Data Preparation: Input data is read from TSV files containing GitHub issues.
 The dataset includes fields such as Title, Description, and Area (classification label).
 Pipeline Definition:
 
@@ -28,9 +26,7 @@ Text fields are featurized into numeric representations.
 Labels are mapped to numeric keys.
 Featurized fields are combined into a single Features column.
 
-- Model Training:
-
-The training dataset is fed through the pipeline to build a model.
+- Model Training: The training dataset is fed through the pipeline to build a model.
 The trained model is saved to a .zip file for future use.
 Evaluation:
 
@@ -39,27 +35,14 @@ Prediction:
 
 A trained model is loaded to classify a new GitHub issue based on its Title and Description.
 
-## Folder Structure
-
-.
-- Data
--- issues_train.tsv    # Training dataset
-│   ├── issues_test.tsv     # Test dataset
-├── Models
-│   ├── model.zip           # Saved trained model
-├── Program.cs              # Main application logic
-└── README.md               # Project description
-
 ## Prerequisites
 - .NET Core SDK (version 3.1 or higher)
 - Visual Studio or any C# IDE
 - ML.NET version 1.5 or higher
 
-## How to Run
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/your-username/github-issue-classifier.git
+##   Microsoft Documentation
+This project was from Microsoft Documentation. Link to the site ---> https://learn.microsoft.com/en-us/dotnet/machine-learning/tutorials/github-issue-classification
+
 
 
 ## Use Cases
